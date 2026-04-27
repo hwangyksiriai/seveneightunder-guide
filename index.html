@@ -3,231 +3,160 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Esther Bunny X SEVEN EIGHT UNDER 가이드라인</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Esther Bunny × SEVEN EIGHT UNDER 가이드라인</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
-      --bg: #F4F4F2;
+      --bg: #FFFFFF;
       --surface: #FFFFFF;
-      --surface-2: #F8F8F6;
-      --primary: #1A1A1A;
-      --accent: #2A2A2A;
-      --accent-soft: rgba(42, 42, 42, 0.06);
-      --text-primary: #1A1A1A;
-      --text-secondary: #555555;
-      --text-muted: #999999;
-      --border: rgba(0,0,0,0.08);
-      --border-accent: rgba(0,0,0,0.18);
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
-      --shadow-md: 0 4px 20px rgba(0,0,0,0.08);
-      --shadow-lg: 0 12px 48px rgba(0,0,0,0.12);
-      --radius-sm: 10px;
-      --radius-md: 16px;
-      --radius-lg: 24px;
+      --surface-2: #F7F7F7;
+      --accent: #1A1A1A;
+      --accent-mid: #3A3A3A;
+      --accent-pale: #888888;
+      --text-dark: #1A1A1A;
+      --text-mid: #4A4A4A;
+      --text-light: #999999;
+      --border: rgba(0,0,0,0.07);
+      --border-mid: rgba(0,0,0,0.12);
+      --tag-bg: #F2F2F2;
     }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      font-family: 'Noto Sans KR', 'Inter', -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-      background: var(--bg);
-      color: var(--text-primary);
-      line-height: 1.6;
-      min-height: 100vh;
-      -webkit-font-smoothing: antialiased;
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: var(--bg);
+      color: var(--text-dark);
+      line-height: 1.7;
     }
 
-    .page {
-      max-width: 560px;
-      margin: 0 auto;
-      padding: 1.5rem 1rem 5rem;
-    }
-
-    /* ── Hero ── */
-    .hero {
+    /* HERO BANNER */
+    .page { max-width: 640px; margin: 0 auto; padding: 2rem 1rem 0; }
+    .hero-banner {
       position: relative;
+      width: 100%;
+      background: var(--surface);
+      border-radius: 18px;
       overflow: hidden;
-      border-radius: var(--radius-lg);
-      margin-bottom: 10px;
-      box-shadow: var(--shadow-lg);
-      text-align: center;
-      background: #1A1A1A;
-      border: 1px solid rgba(0,0,0,0.12);
-    }
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      width: 100%; height: 100%;
-      object-fit: cover;
-      object-position: center center;
-      display: block;
-      opacity: 0.45;
-    }
-    .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        160deg,
-        rgba(0,0,0,0.75) 0%,
-        rgba(0,0,0,0.55) 60%,
-        rgba(0,0,0,0.7) 100%
-      );
-    }
-    .hero-img-placeholder {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+      margin-bottom: 2rem;
+      border: 1px solid var(--border-mid);
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
+      padding: 52px 32px 56px;
+      box-shadow: none;
     }
-    .hero-img-placeholder-text {
-      font-size: 12px;
-      color: #555;
-      letter-spacing: 0.1em;
-    }
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      padding: 52px 28px 56px;
-    }
-    .hero-badge {
+    .hero-tag {
       display: inline-block;
-      background: rgba(255,255,255,0.15);
-      border: 1px solid rgba(255,255,255,0.4);
-      color: #fff;
       font-size: 10px;
       font-weight: 700;
-      letter-spacing: 0.16em;
+      letter-spacing: 0.2em;
+      padding: 5px 14px;
+      border-radius: 20px;
+      background: var(--tag-bg);
+      color: var(--text-mid);
+      border: 1px solid var(--border-mid);
       text-transform: uppercase;
-      padding: 6px 18px;
-      border-radius: 99px;
-      margin-bottom: 20px;
-      font-family: 'Inter', sans-serif;
+      margin-bottom: 22px;
     }
     .hero-title {
+      font-family: 'Noto Serif KR', serif;
       font-size: 22px;
-      font-weight: 900;
-      color: #fff;
-      line-height: 1.25;
+      font-weight: 700;
+      color: var(--text-dark);
+      text-align: center;
+      line-height: 1.45;
       letter-spacing: -0.3px;
-      margin-bottom: 8px;
-      font-family: 'Inter', sans-serif;
+      margin-bottom: 10px;
     }
-    .hero-title .x-mark {
-      color: var(--accent);
+    .hero-title .x { color: var(--accent-pale); }
+    .hero-sub {
+      font-size: 12px;
+      color: var(--text-light);
+      text-align: center;
+      line-height: 1.85;
+      margin-top: 6px;
     }
-    .hero-subtitle {
-      font-size: 13px;
-      font-weight: 600;
-      color: rgba(255,255,255,0.5);
-      letter-spacing: 0.08em;
+    .hero-divider {
+      width: 32px;
+      height: 1px;
+      background: rgba(0,0,0,0.15);
+      margin: 18px auto;
+    }
+
+    /* SECTION */
+    .section {
+      padding: 48px 28px;
+      border-bottom: 1px solid var(--border);
+      max-width: 640px;
+      margin: 0 auto;
+      background: #FFFFFF;
+    }
+    .section:last-child { border-bottom: none; padding-bottom: 64px; }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      font-weight: 700;
+      color: var(--text-mid);
       text-transform: uppercase;
-      margin-bottom: 18px;
-      font-family: 'Inter', sans-serif;
+      margin-bottom: 20px;
     }
-    .hero-desc {
-      font-size: 13px;
-      color: rgba(255,255,255,0.65);
+    .section-label::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 1px;
+      background: var(--text-mid);
+    }
+    .section-title {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+
+    /* BRAND INTRO */
+    .brand-lead {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-mid);
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
       line-height: 1.8;
     }
+    .brand-lead strong { color: var(--text-dark); }
 
-    /* ── Section card ── */
-    .card {
-      background: var(--surface);
-      border-radius: var(--radius-md);
-      margin-bottom: 10px;
-      box-shadow: var(--shadow-md);
-      border: 1px solid var(--border);
-      overflow: hidden;
-    }
-    .card-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 18px 20px 16px;
-      border-bottom: 1px solid var(--border);
-    }
-    .card-icon {
-      width: 34px; height: 34px;
-      border-radius: 9px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 16px;
-      flex-shrink: 0;
-      background: #EFEFED;
-    }
-    .card-header-title {
-      font-size: 14px;
-      font-weight: 800;
-      color: var(--text-primary);
-      letter-spacing: -0.3px;
-    }
-    .card-body {
-      padding: 20px;
-    }
-
-    /* ── Brand intro ── */
-    .brand-intro {
-      font-size: 13.5px;
-      color: var(--text-secondary);
-      line-height: 1.85;
-      margin-bottom: 16px;
-    }
-    .brand-intro strong {
-      color: var(--text-primary);
-      font-weight: 700;
-    }
-    .brand-tagline {
-      font-size: 12px;
-      color: #444;
-      font-style: italic;
-      font-family: 'Inter', sans-serif;
-      letter-spacing: 0.03em;
-      margin-bottom: 16px;
-      padding-left: 12px;
-      border-left: 2px solid #1A1A1A;
-    }
     .brand-img-wrap {
-      border-radius: var(--radius-sm);
+      border-radius: 12px;
       overflow: hidden;
-      margin-bottom: 14px;
-      background: var(--surface-2);
       border: 1px solid var(--border);
-      min-height: 180px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      margin-bottom: 10px;
+      background: var(--surface-2);
     }
     .brand-img-wrap img {
       width: 100%;
       display: block;
     }
-    .brand-img-placeholder {
-      font-size: 12px;
-      color: var(--text-muted);
-      letter-spacing: 0.08em;
-      padding: 40px 20px;
-      text-align: center;
-    }
+
     .brand-link {
       display: flex;
       align-items: center;
       gap: 12px;
-      background: #1A1A1A;
-      border: 1px solid #1A1A1A;
-      border-radius: var(--radius-sm);
-      padding: 13px 16px;
+      background: var(--accent);
+      border-radius: 12px;
+      padding: 14px 18px;
       text-decoration: none;
-      transition: all 0.2s;
+      margin-top: 16px;
+      transition: background 0.2s;
     }
-    .brand-link:hover {
-      background: #333;
-      border-color: #333;
-      transform: translateY(-1px);
-      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
-    }
+    .brand-link:hover { background: var(--accent-mid); }
     .brand-link-label {
       flex: 1;
       font-size: 13px;
@@ -237,710 +166,629 @@
     .brand-link-arrow {
       width: 26px; height: 26px;
       border-radius: 50%;
-      background: #fff;
-      color: #1A1A1A;
+      background: rgba(255,255,255,0.12);
+      color: #fff;
       display: flex; align-items: center; justify-content: center;
-      font-size: 14px;
-      font-weight: 900;
+      font-size: 15px;
       flex-shrink: 0;
     }
 
-    /* ── Info rows ── */
-    .info-grid {
-      display: grid;
-      gap: 8px;
+    /* INFO BOX — white card with dark border */
+    .info-box {
+      background: var(--surface);
+      border: 1px solid var(--border-mid);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    .info-box-title {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      color: var(--text-light);
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 16px;
     }
     .info-row {
       display: flex;
       align-items: flex-start;
-      gap: 10px;
-      background: var(--surface-2);
-      border-radius: var(--radius-sm);
-      padding: 12px 14px;
-      border: 1px solid var(--border);
+      gap: 12px;
+      font-size: 13.5px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
     }
-    .info-label {
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--text-muted);
-      letter-spacing: 0.05em;
-      min-width: 90px;
+    .info-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .info-key {
+      min-width: 76px;
+      color: var(--text-light);
+      font-size: 12px;
       flex-shrink: 0;
-      padding-top: 1px;
     }
-    .info-value {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--text-primary);
-      line-height: 1.6;
-    }
+    .info-val { color: var(--text-dark); font-weight: 500; line-height: 1.6; }
+    .info-val strong { color: var(--text-dark); }
+    .info-warn { font-size: 11.5px; color: #C0391B; margin-top: 3px; }
+
     .info-badge {
       display: inline-block;
-      background: #1A1A1A;
-      color: #fff;
+      background: var(--accent);
+      color: white;
       font-size: 11px;
-      font-weight: 800;
-      padding: 3px 10px;
+      font-weight: 700;
+      padding: 2px 10px;
       border-radius: 99px;
       font-family: 'Inter', sans-serif;
     }
-    .info-note {
-      font-size: 11px;
-      color: var(--text-muted);
-      margin-top: 2px;
-    }
-    .info-warn {
-      font-size: 11px;
-      color: #E05C5C;
-      margin-top: 2px;
-      font-weight: 600;
-    }
 
-    /* ── Product ── */
+    /* PRODUCT */
+    .product-img-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
     .product-img-wrap {
-      border-radius: var(--radius-sm);
+      border-radius: 12px;
       overflow: hidden;
-      margin-bottom: 14px;
-      background: var(--surface-2);
       border: 1px solid var(--border);
-      min-height: 200px;
+      background: var(--surface-2);
+    }
+    .product-img-wrap img { width: 100%; display: block; }
+
+    .product-value-box {
       display: flex;
       align-items: center;
-      justify-content: center;
+      gap: 10px;
+      background: var(--surface-2);
+      border: 1px solid var(--border-mid);
+      border-radius: 12px;
+      padding: 13px 18px;
+      margin-bottom: 16px;
     }
-    .product-img-wrap img {
-      width: 100%;
-      display: block;
+    .product-value-label { flex: 1; font-size: 13px; font-weight: 700; color: var(--text-mid); }
+    .product-value-num {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text-dark);
+      font-family: 'Inter', sans-serif;
+      background: var(--accent);
+      color: #fff;
+      padding: 3px 12px;
+      border-radius: 99px;
     }
-    .product-img-placeholder {
-      font-size: 12px;
-      color: var(--text-muted);
+
+    .option-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-light);
       letter-spacing: 0.08em;
-      padding: 50px 20px;
-      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 8px;
     }
     .color-options {
       display: flex;
       gap: 8px;
-      margin-bottom: 10px;
+      margin-bottom: 16px;
     }
     .color-chip {
       flex: 1;
       display: flex;
       align-items: center;
       gap: 8px;
-      padding: 10px 13px;
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
+      padding: 10px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border-mid);
+      border-radius: 10px;
       font-size: 12px;
       font-weight: 700;
-      color: var(--text-secondary);
+      color: var(--text-mid);
     }
     .color-dot {
       width: 14px; height: 14px;
       border-radius: 50%;
       flex-shrink: 0;
     }
-    .color-dot.ash-black { background: #2A2A2A; border: 1px solid #444; }
+    .color-dot.ash-black { background: #2A2A2A; border: 1px solid #555; }
     .color-dot.off-white { background: #F0EDE6; border: 1px solid #ccc; }
 
-    .size-options {
-      display: flex;
-      gap: 7px;
-    }
+    .size-options { display: flex; gap: 7px; }
     .size-chip {
       flex: 1;
       text-align: center;
       padding: 9px 8px;
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
+      background: var(--surface);
+      border: 1px solid var(--border-mid);
+      border-radius: 10px;
       font-size: 13px;
       font-weight: 800;
-      color: var(--text-secondary);
+      color: var(--text-mid);
       font-family: 'Inter', sans-serif;
     }
 
-    /* ── Partnership box ── */
-    .partnership-box {
-      background: #F8F8F6;
-      border: 1px solid rgba(0,0,0,0.1);
-      border-radius: var(--radius-sm);
+    /* NOTICE BOX */
+    .notice-box {
+      background: var(--surface-2);
+      border: 1px solid var(--border-mid);
+      border-radius: 12px;
+      padding: 16px 18px;
+      font-size: 13px;
+      color: var(--text-mid);
+      line-height: 1.8;
+      margin-top: 12px;
+    }
+    .notice-box strong { color: var(--text-dark); }
+    .notice-box-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-dark);
+      letter-spacing: 0.02em;
+      margin-bottom: 10px;
+    }
+
+    .secondary-box {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      background: var(--tag-bg);
+      border: 1px solid var(--border-mid);
+      border-radius: 12px;
       padding: 14px 16px;
       margin-top: 10px;
+      font-size: 13px;
+      color: var(--text-mid);
+      line-height: 1.7;
     }
-    .partnership-box-title {
-      font-size: 12px;
-      font-weight: 800;
-      color: #1A1A1A;
-      letter-spacing: 0.06em;
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .partnership-box-body {
-      font-size: 12.5px;
-      color: var(--text-secondary);
-      line-height: 1.8;
-    }
+    .secondary-box strong { color: var(--text-dark); }
 
-    .secondary-use-box {
+    /* CONTENT GUIDE */
+    .must-list { display: grid; gap: 10px; margin-bottom: 20px; }
+    .must-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
       background: var(--surface-2);
       border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 12px 14px;
-      margin-top: 8px;
-      font-size: 12.5px;
-      color: var(--text-secondary);
-      line-height: 1.75;
-      display: flex;
-      gap: 9px;
-      align-items: flex-start;
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 13px;
+      color: var(--text-mid);
+      line-height: 1.6;
     }
-    .secondary-use-box .icon {
-      font-size: 14px;
-      flex-shrink: 0;
-    }
-
-    /* ── Requirement sections ── */
-    .req-section {
-      margin-bottom: 16px;
-    }
-    .req-section:last-child { margin-bottom: 0; }
-
-    .req-label {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      padding: 4px 12px 4px 8px;
-      border-radius: 99px;
-      margin-bottom: 10px;
-      font-family: 'Inter', sans-serif;
-    }
-    .req-label.required {
-      background: rgba(224, 92, 92, 0.1);
-      color: #E05C5C;
-      border: 1px solid rgba(224, 92, 92, 0.3);
-    }
-    .req-label.forbidden {
-      background: rgba(255, 100, 60, 0.1);
-      color: #FF7043;
-      border: 1px solid rgba(255, 100, 60, 0.3);
-    }
-    .req-label.recommended {
-      background: #EEFAF2;
-      color: #276749;
-      border: 1px solid #9AE6B4;
-    }
-    .req-label .dot {
-      width: 7px; height: 7px;
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-    .required .dot { background: #E05C5C; }
-    .forbidden .dot { background: #FF7043; }
-    .recommended .dot { background: #68D391; }
+    .must-icon { font-size: 15px; margin-top: 1px; flex-shrink: 0; }
+    .must-item strong { color: var(--text-dark); }
 
     .req-sub-label {
       font-size: 11px;
       font-weight: 700;
-      color: var(--text-muted);
-      margin-bottom: 7px;
-      margin-top: 10px;
-      padding-left: 2px;
+      color: var(--text-light);
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+      margin-top: 16px;
     }
+    .req-sub-label:first-child { margin-top: 0; }
 
-    .req-list {
-      list-style: none;
-      display: grid;
-      gap: 7px;
-    }
-    .req-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 9px;
-      font-size: 13px;
-      color: var(--text-secondary);
-      line-height: 1.6;
-    }
-    .req-list li::before {
-      content: '';
-      width: 5px; height: 5px;
-      border-radius: 50%;
-      background: var(--text-muted);
-      flex-shrink: 0;
-      margin-top: 8px;
-    }
-    .req-list.required-list li::before { background: #E05C5C; }
-    .req-list.forbidden-list li::before { background: #FF7043; }
-    .req-list.recommended-list li::before { background: #68D391; }
-
-    /* ── Upload steps ── */
-    .upload-step {
+    .ban-list {
+      background: #FFF5F0;
+      border: 1px solid #F4C5AE;
+      border-radius: 12px;
+      padding: 18px 20px;
       margin-bottom: 16px;
     }
-    .upload-step:last-child { margin-bottom: 0; }
+    .ban-title { font-size: 11px; font-weight: 700; color: #C0391B; margin-bottom: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+    .ban-item { font-size: 12.5px; color: #7A3020; padding: 6px 0; border-bottom: 1px solid #F4C5AE; line-height: 1.6; }
+    .ban-item:last-child { border-bottom: none; }
 
-    .step-header {
+    .rec-list {
+      background: #F0F7F0;
+      border: 1px solid #B8D9B8;
+      border-radius: 12px;
+      padding: 18px 20px;
+    }
+    .rec-title { font-size: 11px; font-weight: 700; color: #2E6B2E; margin-bottom: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+    .rec-item { font-size: 12.5px; color: #2E5030; padding: 6px 0; border-bottom: 1px solid #B8D9B8; line-height: 1.6; }
+    .rec-item:last-child { border-bottom: none; }
+
+    /* UPLOAD GUIDE */
+    .collab-box {
+      background: #4A4A4A;
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 16px;
+    }
+    .collab-title {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      color: rgba(255,255,255,0.45);
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .collab-account {
       display: flex;
       align-items: center;
-      gap: 9px;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .collab-account:last-child { border-bottom: none; }
+    .collab-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,0.4); flex-shrink: 0; }
+    .collab-handle {
+      font-size: 13.5px;
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .collab-handle::after { content: '⎘'; font-size: 11px; color: rgba(255,255,255,0.35); }
+
+    .story-guide {
+      background: var(--surface-2);
+      border: 1px solid var(--border-mid);
+      border-radius: 12px;
+      padding: 16px 18px;
+      font-size: 13px;
+      color: var(--text-mid);
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+    .story-guide strong { color: var(--text-dark); }
+    .story-guide-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-dark);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
       margin-bottom: 10px;
     }
-    .step-num {
-      width: 24px; height: 24px;
-      border-radius: 50%;
-      background: #1A1A1A;
-      color: #fff;
-      font-size: 11px;
-      font-weight: 800;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-      font-family: 'Inter', sans-serif;
-    }
-    .step-title {
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--text-primary);
-    }
 
-    /* ── Pills ── */
-    .pill-wrap {
+    /* HASHTAG */
+    .hashtag-section { margin-top: 4px; }
+    .hashtag-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-mid);
+      margin-bottom: 10px;
       display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-      padding-left: 33px;
+      align-items: center;
+      gap: 6px;
     }
-    .pill {
+    .hashtag-label .required {
+      background: var(--accent);
+      color: white;
+      font-size: 10px;
+      padding: 2px 7px;
+      border-radius: 10px;
+    }
+    .hashtag-wrap { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+    .hashtag {
+      font-size: 13px;
+      padding: 7px 14px;
+      border-radius: 20px;
+      font-weight: 500;
+      cursor: pointer;
+      user-select: none;
+      transition: opacity 0.15s;
       display: inline-flex;
       align-items: center;
       gap: 5px;
-      font-size: 12px;
-      font-weight: 600;
-      padding: 6px 13px;
-      border-radius: 99px;
-      cursor: pointer;
-      transition: all 0.18s;
-      user-select: none;
     }
-    .pill-account {
-      background: #1A1A1A;
-      border: 1px solid #1A1A1A;
-      color: #fff;
-    }
-    .pill-account:hover {
-      background: #333;
-      border-color: #333;
-      transform: translateY(-1px);
-    }
-    .pill-tag {
-      background: #F0F0EE;
-      border: 1px solid rgba(0,0,0,0.12);
-      color: var(--text-secondary);
-    }
-    .pill-tag:hover {
-      background: #E4E4E2;
-      border-color: rgba(0,0,0,0.2);
-      color: #1A1A1A;
-      transform: translateY(-1px);
-    }
-    .pill-copy-icon {
-      font-size: 10px;
-      opacity: 0.55;
-    }
+    .hashtag:active { opacity: 0.6; }
+    .hashtag.req { background: #4A4A4A; color: white; }
+    .hashtag.opt { background: var(--tag-bg); color: var(--text-mid); border: 1px solid var(--border-mid); }
+    .hashtag::after { content: '⎘'; font-size: 11px; opacity: 0.4; }
+    .hashtag.req::after { color: rgba(255,255,255,0.5); }
+    .hashtag.opt::after { color: var(--text-light); }
 
-    /* ── Notice ── */
-    .notice {
-      display: flex;
-      gap: 10px;
-      align-items: flex-start;
-      background: #FFFBEB;
-      border: 1px solid #FDE68A;
-      border-radius: var(--radius-sm);
-      padding: 12px 14px;
-      margin-top: 14px;
-      font-size: 12px;
-      color: #92400E;
-      line-height: 1.6;
-      font-weight: 500;
+    /* WARNING */
+    .warning-box {
+      background: #FFFBF0;
+      border: 1px solid #F0D080;
+      border-radius: 12px;
+      padding: 14px 18px;
+      font-size: 12.5px;
+      color: #7A5A00;
+      line-height: 1.7;
+      margin-top: 12px;
     }
+    .warning-box strong { color: #5A3D00; }
 
-    /* ── Divider ── */
-    .card-divider {
-      height: 1px;
-      background: var(--border);
-      margin: 16px 0;
-    }
-
-    /* ── Ref links ── */
-    .ref-links {
-      display: grid;
-      gap: 6px;
-    }
+    /* REF LINKS */
+    .ref-list { display: grid; gap: 10px; }
     .ref-link {
       display: flex;
       align-items: center;
-      gap: 11px;
-      padding: 11px 14px;
+      gap: 12px;
       background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-mid);
+      border-radius: 12px;
+      padding: 14px 16px;
       text-decoration: none;
-      transition: all 0.18s;
+      transition: border-color 0.18s, background 0.18s;
     }
     .ref-link:hover {
-      background: var(--accent-soft);
-      border-color: var(--border-accent);
-      transform: translateX(2px);
+      background: var(--tag-bg);
+      border-color: rgba(0,0,0,0.22);
     }
-    .ref-link-num {
-      width: 26px; height: 26px;
-      border-radius: 6px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 10px;
-      font-weight: 800;
-      flex-shrink: 0;
+    .ref-num {
+      width: 28px; height: 28px;
+      border-radius: 8px;
       background: linear-gradient(135deg, #C13584, #E1306C);
       color: #fff;
+      font-size: 10px;
+      font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
       font-family: 'Inter', sans-serif;
     }
-    .ref-link-body {
-      flex: 1;
-      min-width: 0;
-    }
-    .ref-link-title {
-      font-size: 12.5px;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: 2px;
-    }
-    .ref-link-sub {
-      font-size: 11px;
-      color: var(--text-muted);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .ref-link-arrow {
-      font-size: 16px;
-      color: var(--text-muted);
-      flex-shrink: 0;
-    }
+    .ref-body { flex: 1; min-width: 0; }
+    .ref-title { font-size: 13px; font-weight: 700; color: var(--text-dark); margin-bottom: 2px; }
+    .ref-sub { font-size: 11px; color: var(--text-light); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .ref-arrow { font-size: 18px; color: var(--text-light); flex-shrink: 0; }
 
-    /* ── Story regram ── */
-    .story-box {
-      display: flex;
-      gap: 10px;
-      align-items: flex-start;
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 12px 14px;
-      font-size: 13px;
-      color: var(--text-secondary);
-      line-height: 1.6;
-    }
-    .story-icon {
-      font-size: 18px;
-      flex-shrink: 0;
-    }
+    /* DIVIDER */
+    .divider { height: 1px; background: var(--border); margin: 24px 0; }
 
-    /* ── Toast ── */
-    .toast {
+    /* COPY TOAST */
+    .copy-toast {
       position: fixed;
-      bottom: 28px;
+      bottom: 32px;
       left: 50%;
-      transform: translateX(-50%) translateY(20px);
-      background: #1A1A1A;
-      color: #fff;
+      transform: translateX(-50%) translateY(10px);
+      background: rgba(26,26,26,0.92);
+      color: white;
       font-size: 13px;
-      font-weight: 700;
       padding: 10px 20px;
-      border-radius: 99px;
+      border-radius: 20px;
       opacity: 0;
       pointer-events: none;
-      transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
-      z-index: 999;
+      transition: opacity 0.22s, transform 0.22s;
+      z-index: 9999;
       white-space: nowrap;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
     }
-    .toast.show {
+    .copy-toast.show {
       opacity: 1;
       transform: translateX(-50%) translateY(0);
     }
 
+    /* FOOTER */
+    .footer {
+      background: var(--accent);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 36px 32px;
+      font-size: 11.5px;
+      letter-spacing: 0.05em;
+      line-height: 1.8;
+    }
+    .footer strong { color: rgba(255,255,255,0.85); }
+
     @media (max-width: 480px) {
-      .hero-content { padding: 38px 18px 44px; }
+      .page { padding: 1rem 0.75rem 0; }
+      .hero-banner { padding: 36px 20px 40px; }
       .hero-title { font-size: 18px; }
-      .card-body { padding: 16px; }
+      .section { padding: 36px 16px; }
+      .section-title { font-size: 18px; }
+      .product-img-grid { grid-template-columns: 1fr; }
+      .footer { padding: 28px 20px; font-size: 11px; }
     }
   </style>
 </head>
 <body>
+
+<!-- HERO -->
 <div class="page">
-
-  <!-- Hero -->
-  <div class="hero">
-    <div class="hero-img-placeholder">
-      <span class="hero-img-placeholder-text">BRAND IMAGE</span>
-    </div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="hero-badge">Collaboration Guideline</div>
-      <div class="hero-title">
-        Esther Bunny <span class="x-mark">×</span> SEVEN EIGHT UNDER
-      </div>
-      <div class="hero-subtitle">Creator Guideline</div>
-      <p class="hero-desc">에스더버니 × 세븐에잇언더<br>첫 번째 콜라보레이션 제품을 소개합니다.</p>
+  <div class="hero-banner">
+    <div class="hero-tag">Collaboration Guideline</div>
+    <div class="hero-title">Esther Bunny <span class="x">×</span> SEVEN EIGHT UNDER</div>
+    <div class="hero-divider"></div>
+    <div class="hero-sub">
+      에스더버니 × 세븐에잇언더<br>
+      첫 번째 콜라보레이션 제품을 소개합니다.<br>
+      Creator Guideline
     </div>
   </div>
+</div>
 
-  <!-- 브랜드 소개 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-icon">✦</div>
-      <div class="card-header-title">SEVEN EIGHT UNDER</div>
-    </div>
-    <div class="card-body">
-      <div class="brand-tagline">Ego를 잃지 않는 이들을 위한 아트 패션 브랜드.</div>
-      <p class="brand-intro">
-        <strong>SEVEN EIGHT UNDER</strong>는 자신만의 색깔을 지키는 이들을 위한 아트 패션 브랜드입니다.<br>
-        에스더버니와의 첫 콜라보레이션 제품을 가장 먼저 만나보세요.
-      </p>
-      <div class="brand-img-wrap" style="min-height:unset;">
-        <img src="images/78(1).png" alt="SEVEN EIGHT UNDER">
-      </div>
-      <div class="brand-img-wrap" style="min-height:unset;">
-        <img src="images/78(2).png" alt="SEVEN EIGHT UNDER">
-      </div>
-      <div class="brand-img-wrap" style="min-height:unset;">
-        <img src="images/78(3).png" alt="SEVEN EIGHT UNDER">
-      </div>
-      <div class="brand-img-wrap" style="min-height:unset;">
-        <img src="images/78(4).png" alt="SEVEN EIGHT UNDER">
-      </div>
-      <a class="brand-link" href="https://www.78under.com/" target="_blank">
-        <span class="brand-link-label">브랜드 링크 바로가기</span>
-        <span class="brand-link-arrow">›</span>
-      </a>
-    </div>
+<!-- 브랜드 소개 -->
+<div class="section">
+  <div class="section-label">About Brand</div>
+  <div class="section-title">SEVEN EIGHT UNDER</div>
+  <div class="brand-lead">
+    <strong>SEVEN EIGHT UNDER</strong>는 자신만의 색깔을 지키는 이들을 위한<br>
+    <strong>아트 패션 브랜드</strong>입니다.<br>
+    Ego를 잃지 않는 이들을 위한 아트 패션 브랜드.
   </div>
-
-  <!-- 콜라보 제품 소개 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-icon">👟</div>
-      <div class="card-header-title">콜라보 제품 소개</div>
-    </div>
-    <div class="card-body">
-      <div class="product-img-wrap" style="min-height:unset;">
-        <img src="images/신발(black).png" alt="ASH BLACK">
-      </div>
-      <div class="product-img-wrap" style="min-height:unset;">
-        <img src="images/신발(white).png" alt="OFF WHITE">
-      </div>
-      <div style="display:flex; align-items:center; gap:8px; background:#F8F8F6; border:1px solid rgba(0,0,0,0.08); border-radius:10px; padding:11px 14px; margin-bottom:12px;">
-        <span style="font-size:15px;">🎁</span>
-        <span style="font-size:13px; font-weight:700; color:#1A1A1A;">협찬 제품 가치</span>
-        <span style="margin-left:auto; font-size:12px; font-weight:800; color:#fff; background:#1A1A1A; border-radius:99px; padding:3px 12px;">20만원 상당</span>
-      </div>
-      <div style="margin-bottom: 10px;">
-        <div class="info-label" style="margin-bottom: 8px;">컬러 선택</div>
-        <div class="color-options">
-          <div class="color-chip">
-            <div class="color-dot ash-black"></div>
-            ASH BLACK
-          </div>
-          <div class="color-chip">
-            <div class="color-dot off-white"></div>
-            OFF WHITE
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="info-label" style="margin-bottom: 8px;">사이즈 선택</div>
-        <div class="size-options">
-          <div class="size-chip">230</div>
-          <div class="size-chip">240</div>
-          <div class="size-chip">250</div>
-        </div>
-      </div>
-    </div>
+  <p style="font-size:13.5px; color:var(--text-mid); line-height:1.8; margin-bottom:20px;">
+    에스더버니와의 첫 콜라보레이션 제품을 가장 먼저 만나보세요.
+  </p>
+  <div class="brand-img-wrap">
+    <img src="images/78(1).png" alt="SEVEN EIGHT UNDER">
   </div>
-
-  <!-- 캠페인 안내 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-icon">🗓️</div>
-      <div class="card-header-title">캠페인 안내</div>
-    </div>
-    <div class="card-body">
-      <div class="info-grid">
-        <div class="info-row">
-          <span class="info-label">제품 출고일</span>
-          <div>
-            <div class="info-value">4월 27일</div>
-            <div class="info-note">변동 가능</div>
-          </div>
-        </div>
-        <div class="info-row">
-          <span class="info-label">콘텐츠 타입</span>
-          <span class="info-value"><span class="info-badge">Reels</span>&nbsp; 최소 20초</span>
-        </div>
-        <div class="info-row">
-          <span class="info-label">업로드 기간</span>
-          <div>
-            <div class="info-value">5월 5일까지 (미정)</div>
-            <div class="info-warn">⚠ 기간 미준수 시 고료 제공 불가</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="partnership-box">
-        <div class="partnership-box-title">⚡ 파트너십 코드 제공 필수</div>
-        <p class="partnership-box-body">
-          브랜드 예산으로 광고가 집행될 예정이며, 별도의 리소스 투입 없이도 콘텐츠가 추가로 노출될 수 있는 기회입니다. 파트너십 광고의 경우 광고 성과(조회수, 유입, 도달 등)가 모두 인플루언서 계정으로 누적되어 <strong style="color: var(--text-primary);">채널 성장 및 콘텐츠 퍼포먼스</strong>에 긍정적인 효과를 기대하실 수 있습니다.
-        </p>
-      </div>
-
-      <div class="secondary-use-box">
-        <span class="icon">🔁</span>
-        <div>
-          <strong style="color: var(--text-primary);">2차 활용 동의</strong><br>
-          제작된 콘텐츠는 브랜드 채널의 2차 활용(공유·리그램)에 활용될 수 있습니다.
-        </div>
-      </div>
-    </div>
+  <div class="brand-img-wrap">
+    <img src="images/78(2).png" alt="SEVEN EIGHT UNDER">
   </div>
-
-  <!-- 콘텐츠 제작 가이드 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-icon">🎬</div>
-      <div class="card-header-title">이렇게 제작해 주세요</div>
-    </div>
-    <div class="card-body">
-
-      <div class="req-section">
-        <div class="req-label required"><span class="dot"></span>필수사항</div>
-        <div class="req-sub-label">영상 내 포함 필수</div>
-        <ul class="req-list required-list">
-          <li>콜라보 브랜드(세븐에잇언더)에 대한 내용 소개</li>
-          <li>5월 1일부터 무신사 단독 판매 언급</li>
-        </ul>
-        <div class="req-sub-label" style="margin-top: 12px;">캡션 본문 포함 필수</div>
-        <ul class="req-list required-list">
-          <li>콜라보 브랜드(세븐에잇언더)에 대한 내용 소개</li>
-          <li>5월 1일부터 무신사 단독 판매 언급</li>
-        </ul>
-      </div>
-
-      <div class="card-divider"></div>
-
-      <div class="req-section">
-        <div class="req-label forbidden"><span class="dot"></span>금지사항</div>
-        <ul class="req-list forbidden-list">
-          <li>영상 내 다른 브랜드 의상 착용 가능 여부 언급 금지</li>
-        </ul>
-      </div>
-
-      <div class="card-divider"></div>
-
-      <div class="req-section">
-        <div class="req-label recommended"><span class="dot"></span>추천사항</div>
-        <ul class="req-list recommended-list">
-          <li>콜라보 제품과 어울리는 의상 착용 부탁드립니다</li>
-          <li>콜라보 제품 착용에 대한 솔직한 후기</li>
-          <li>에스더버니(Esther Bunny) 언급</li>
-        </ul>
-      </div>
-
-    </div>
+  <div class="brand-img-wrap">
+    <img src="images/78(3).png" alt="SEVEN EIGHT UNDER">
   </div>
-
-  <!-- 업로드 가이드 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-icon">📤</div>
-      <div class="card-header-title">이렇게 업로드해 주세요</div>
-    </div>
-    <div class="card-body">
-
-      <div class="upload-step">
-        <div class="step-header">
-          <div class="step-num">1</div>
-          <div class="step-title">공동작업자 태그 필수</div>
-        </div>
-        <div class="pill-wrap">
-          <div class="pill pill-account" data-copy="@78under_official">@78under_official <span class="pill-copy-icon">❐</span></div>
-        </div>
-      </div>
-
-      <div class="card-divider"></div>
-
-      <div class="upload-step">
-        <div class="step-header">
-          <div class="step-num">2</div>
-          <div class="step-title">스토리 리그램</div>
-        </div>
-        <div class="story-box" style="margin-left: 33px;">
-          <div>리그램 시 <strong style="color: var(--text-primary);">무신사 상품 링크를 함께</strong> 포함해 주세요.<br><span style="font-size:12px; color:var(--text-muted);">(무신사 상품 링크 추후 제공)</span></div>
-        </div>
-      </div>
-
-      <div class="card-divider"></div>
-
-      <div class="upload-step">
-        <div class="step-header">
-          <div class="step-num">3</div>
-          <div class="step-title">필수 해시태그</div>
-        </div>
-        <div class="pill-wrap">
-          <div class="pill pill-tag" data-copy="#세븐에잇언더">#세븐에잇언더 <span class="pill-copy-icon">❐</span></div>
-          <div class="pill pill-tag" data-copy="#에스더버니">#에스더버니 <span class="pill-copy-icon">❐</span></div>
-          <div class="pill pill-tag" data-copy="#에스더버니x세븐에잇언더">#에스더버니x세븐에잇언더 <span class="pill-copy-icon">❐</span></div>
-          <div class="pill pill-tag" data-copy="#틈결">#틈결 <span class="pill-copy-icon">❐</span></div>
-        </div>
-      </div>
-
-      <div class="notice">
-        <span>💡</span>
-        <div>공동작업자 태그 및 해시태그는 업로드 시 반드시 포함해 주세요.</div>
-      </div>
-
-    </div>
+  <div class="brand-img-wrap">
+    <img src="images/78(4).png" alt="SEVEN EIGHT UNDER">
   </div>
+  <a class="brand-link" href="https://www.78under.com/" target="_blank">
+    <span class="brand-link-label">브랜드 링크 바로가기</span>
+    <span class="brand-link-arrow">›</span>
+  </a>
+</div>
 
-  <!-- 레퍼런스 영상 -->
-  <div class="card" style="margin-bottom: 0;">
-    <div class="card-header">
-      <div class="card-icon">🎥</div>
-      <div class="card-header-title">레퍼런스 영상 (콘텐츠 참고용)</div>
+<!-- 콜라보 제품 소개 -->
+<div class="section">
+  <div class="section-label">Collaboration Product</div>
+  <div class="section-title">콜라보 제품 소개</div>
+
+  <div class="product-img-grid">
+    <div class="product-img-wrap">
+      <img src="images/신발(black).png" alt="ASH BLACK">
     </div>
-    <div class="card-body">
-      <div class="ref-links">
-        <a class="ref-link" href="https://www.instagram.com/reels/DW0pRaKiXEW/" target="_blank">
-          <span class="ref-link-num">01</span>
-          <div class="ref-link-body">
-            <div class="ref-link-title">콜라보 레퍼런스 영상</div>
-            <div class="ref-link-sub">instagram.com/reels/DW0pRaKiXEW</div>
-          </div>
-          <span class="ref-link-arrow">›</span>
-        </a>
-      </div>
+    <div class="product-img-wrap">
+      <img src="images/신발(white).png" alt="OFF WHITE">
     </div>
   </div>
 
 </div>
 
-<!-- Toast -->
-<div class="toast" id="toast"></div>
+<!-- 캠페인 안내 -->
+<div class="section">
+  <div class="section-label">Campaign Info</div>
+  <div class="section-title">캠페인 안내</div>
+
+  <div class="info-box">
+    <div class="info-box-title">일정 & 조건</div>
+    <div class="info-row">
+      <span class="info-key">제품 출고일</span>
+      <div class="info-val">
+        4월 28일
+        <div style="font-size:11.5px; color:var(--text-light); margin-top:2px;">변동 가능</div>
+      </div>
+    </div>
+    <div class="info-row">
+      <span class="info-key">콘텐츠 타입</span>
+      <div class="info-val"><span class="info-badge">Reels</span>&nbsp; 최소 20초</div>
+    </div>
+    <div class="info-row">
+      <span class="info-key">업로드 기간</span>
+      <div class="info-val">
+        <strong>5월 3일까지</strong> (미정)
+        <div class="info-warn">⚠ 기간 미준수 시 고료 제공 불가</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="notice-box">
+    <div class="notice-box-title">파트너십 코드 제공 필수</div>
+    브랜드 예산으로 광고가 집행될 예정이며, 별도의 리소스 투입 없이도 콘텐츠가 추가로 노출될 수 있는 기회입니다. 파트너십 광고의 경우 광고 성과(조회수, 유입, 도달 등)가 모두 인플루언서 계정으로 누적되어 <strong>채널 성장 및 콘텐츠 퍼포먼스</strong>에 긍정적인 효과를 기대하실 수 있습니다.
+  </div>
+
+  <div class="secondary-box">
+    <div>
+      <strong>2차 활용 동의</strong><br>
+      제작된 콘텐츠는 브랜드 채널의 2차 활용(공유·리그램)에 활용될 수 있습니다.
+    </div>
+  </div>
+</div>
+
+<!-- 콘텐츠 제작 가이드 -->
+<div class="section">
+  <div class="section-label">Content Guide</div>
+  <div class="section-title">이렇게 제작해 주세요</div>
+
+  <div class="req-sub-label">영상 내 포함 필수</div>
+  <div class="must-list">
+    <div class="must-item">
+      <div>콜라보 브랜드(<strong>세븐에잇언더</strong>)에 대한 내용 소개</div>
+    </div>
+    <div class="must-item">
+      <div><strong>5월 1일부터 무신사 단독 판매</strong> 언급</div>
+    </div>
+    <div class="must-item">
+      <div>제공 제품은 타 제품과 믹스매치 가능하나, <strong>제공된 제품 전체가 노출</strong>되도록 부탁드립니다.</div>
+    </div>
+  </div>
+
+  <div class="req-sub-label">캡션 본문 포함 필수</div>
+  <div class="must-list">
+    <div class="must-item">
+      <div>콜라보 브랜드(<strong>세븐에잇언더</strong>)에 대한 내용 소개</div>
+    </div>
+    <div class="must-item">
+      <div><strong>5월 1일부터 무신사 단독 판매</strong> 언급</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="ban-list">
+    <div class="ban-title">🚫 금지사항</div>
+    <div class="ban-item">영상 내 다른 브랜드 의상 착용 가능하나 언급 금지</div>
+  </div>
+
+  <div class="rec-list">
+    <div class="rec-title">✅ 추천사항</div>
+    <div class="rec-item">콜라보 제품과 어울리는 의상 착용 부탁드립니다</div>
+    <div class="rec-item">콜라보 제품 착용에 대한 솔직한 후기</div>
+    <div class="rec-item">에스더버니(Esther Bunny) 언급</div>
+    <div class="rec-item">타제품과 믹스매치 가능</div>
+  </div>
+</div>
+
+<!-- 업로드 가이드 -->
+<div class="section">
+  <div class="section-label">Upload</div>
+  <div class="section-title">이렇게 업로드해 주세요</div>
+
+  <div class="collab-box">
+    <div class="collab-title">공동작업자 태그 필수</div>
+    <div class="collab-account">
+      <div class="collab-dot"></div>
+      <span class="collab-handle" data-copy="@78under_official">@78under_official</span>
+    </div>
+  </div>
+
+  <div class="story-guide">
+    <div class="story-guide-title">스토리 리그램</div>
+    리그램 시 <strong>무신사 상품 링크를 함께</strong> 포함해 주세요.<br>
+    <span style="font-size:11.5px; color:var(--text-light);">(무신사 상품 링크 추후 제공)</span>
+  </div>
+
+  <div class="hashtag-section">
+    <div class="hashtag-label">
+      <span>해시태그</span>
+    </div>
+    <div style="font-size:11px; color:var(--text-light); margin-bottom:8px;">필수</div>
+    <div class="hashtag-wrap">
+      <span class="hashtag req" data-copy="#seveneightunder">#seveneightunder</span>
+      <span class="hashtag req" data-copy="#estherbunny">#estherbunny</span>
+      <span class="hashtag req" data-copy="#에스더버니x세븐에잇언더">#에스더버니x세븐에잇언더</span>
+    </div>
+    <div style="font-size:11px; color:var(--text-light); margin-bottom:8px;">선택</div>
+    <div class="hashtag-wrap">
+      <span class="hashtag opt" data-copy="#세븐에잇언더">#세븐에잇언더</span>
+      <span class="hashtag opt" data-copy="#에스더버니">#에스더버니</span>
+      <span class="hashtag opt" data-copy="#틈결">#틈결</span>
+      <span class="hashtag opt" data-copy="#팝업스토어">#팝업스토어</span>
+      <span class="hashtag opt" data-copy="#서울숲">#서울숲</span>
+    </div>
+  </div>
+
+  <div class="warning-box">
+    공동작업자 태그 및 해시태그는 업로드 시 반드시 포함해 주세요.
+  </div>
+</div>
+
+<!-- 레퍼런스 영상 -->
+<div class="section">
+  <div class="section-label">Reference</div>
+  <div class="section-title">레퍼런스 영상</div>
+  <p style="font-size:13.5px; color:var(--text-mid); line-height:1.8; margin-bottom:20px;">콘텐츠 제작 시 참고해 주세요.</p>
+  <div class="ref-list">
+    <a class="ref-link" href="https://www.instagram.com/reels/DW0pRaKiXEW/" target="_blank">
+      <div class="ref-body">
+        <div class="ref-title">▶ 예시 콘텐츠 1</div>
+        <div class="ref-sub">Instagram Reels 바로가기</div>
+      </div>
+      <span class="ref-arrow">›</span>
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <strong>Esther Bunny × SEVEN EIGHT UNDER</strong><br>
+  Creator Collaboration Guideline<br><br>
+  문의사항은 담당자에게 연락해 주세요.
+</div>
+
+<!-- TOAST -->
+<div class="copy-toast" id="toast"></div>
 
 <script>
   const toast = document.getElementById('toast');
@@ -953,9 +801,9 @@
     toastTimer = setTimeout(() => toast.classList.remove('show'), 1800);
   }
 
-  document.querySelectorAll('.pill').forEach(function(el) {
+  document.querySelectorAll('.hashtag, .collab-handle').forEach(function(el) {
     el.addEventListener('click', function() {
-      const text = this.dataset.copy || this.innerText.replace('❐','').trim();
+      const text = this.dataset.copy || this.textContent.replace('⎘','').trim();
       navigator.clipboard.writeText(text).then(function() {
         showToast(text + ' 복사 완료! ✓');
       }).catch(function() {
