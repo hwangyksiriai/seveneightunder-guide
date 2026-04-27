@@ -21,13 +21,18 @@
       --tag-bg: #EAE6E2;
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+    html { overflow-x: hidden; scroll-behavior: smooth; }
 
     body {
       font-family: 'Noto Sans KR', sans-serif;
       background-color: var(--bg);
       color: var(--text-dark);
       line-height: 1.7;
+      -webkit-text-size-adjust: 100%;
+      overflow-x: hidden;
+      word-break: keep-all;
     }
 
     /* HERO BANNER */
@@ -164,10 +169,11 @@
       gap: 12px;
       background: var(--accent);
       border-radius: 12px;
-      padding: 14px 18px;
+      padding: 16px 18px;
       text-decoration: none;
       margin-top: 16px;
       transition: background 0.2s;
+      min-height: 52px;
     }
     .brand-link:hover { background: var(--accent-mid); }
     .brand-link-label {
@@ -476,7 +482,7 @@
     .hashtag-wrap { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
     .hashtag {
       font-size: 13px;
-      padding: 7px 14px;
+      padding: 9px 14px;
       border-radius: 20px;
       font-weight: 500;
       cursor: pointer;
@@ -485,6 +491,7 @@
       display: inline-flex;
       align-items: center;
       gap: 5px;
+      min-height: 40px;
     }
     .hashtag:active { opacity: 0.6; }
     .hashtag.req { background: #726E68; color: white; }
@@ -515,9 +522,10 @@
       background: var(--surface-2);
       border: 1px solid var(--border-mid);
       border-radius: 12px;
-      padding: 14px 16px;
+      padding: 16px;
       text-decoration: none;
       transition: border-color 0.18s, background 0.18s;
+      min-height: 56px;
     }
     .ref-link:hover {
       background: var(--tag-bg);
@@ -577,13 +585,40 @@
     .footer strong { color: rgba(255,255,255,0.85); }
 
     @media (max-width: 480px) {
-      .page { padding: 1rem 0.75rem 0; }
-      .hero-banner { padding: 36px 20px 40px; }
-      .hero-title { font-size: 18px; }
-      .section { padding: 36px 16px; }
-      .section-title { font-size: 18px; }
+      .page { padding: 0.75rem 0.75rem 0; }
+      .hero-banner { padding: 40px 20px 44px; min-height: 200px; }
+      .hero-tag { font-size: 9px; padding: 4px 12px; margin-bottom: 16px; }
+      .hero-title { font-size: 17px; }
+      .hero-sub { font-size: 11.5px; }
+      .section { padding: 28px 16px; }
+      .section-title { font-size: 17px; margin-bottom: 16px; }
+      .section-label { font-size: 9px; margin-bottom: 14px; }
       .product-img-grid { grid-template-columns: 1fr; }
+      .info-box { padding: 16px; }
+      .info-row { font-size: 13px; gap: 10px; }
+      .info-key { min-width: 68px; font-size: 11.5px; }
+      .must-item { padding: 12px 14px; font-size: 12.5px; }
+      .ban-list, .rec-list { padding: 14px 16px; }
+      .ban-item, .rec-item { font-size: 12px; }
+      .collab-box { padding: 12px 14px; }
+      .collab-handle { font-size: 13px; }
+      .story-guide { padding: 14px 16px; font-size: 12.5px; }
+      .hashtag { font-size: 12px; padding: 8px 12px; }
+      .ref-link { padding: 14px; }
+      .ref-title { font-size: 12.5px; }
       .footer { padding: 28px 20px; font-size: 11px; }
+      .size-options { flex-wrap: wrap; }
+      .size-chip { min-width: calc(25% - 6px); flex: none; }
+      .color-chip { font-size: 11.5px; }
+      .copy-toast { font-size: 12px; padding: 9px 16px; bottom: 24px; }
+    }
+
+    @media (max-width: 375px) {
+      .hero-title { font-size: 15px; }
+      .section { padding: 24px 14px; }
+      .info-key { min-width: 62px; }
+      .hashtag { font-size: 11.5px; padding: 7px 10px; }
+      .collab-handle { font-size: 12.5px; }
     }
   </style>
 </head>
